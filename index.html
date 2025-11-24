@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TP - Carrito de Compras (JavaScript)</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 tabindex="0">Tienda - Trabajo Práctico (Carrito)</h1>
+
+      <div class="search">
+        <input id="searchInput" placeholder="Buscar producto..." />
+      </div>
+
+      <button id="viewCartBtn" aria-label="Ver carrito">
+        Carrito (<span id="cartCount">0</span>)
+      </button>
+    </div>
+  </header>
+
+  <!-- SLIDER  -->
+  <section class="slider-container">
+    <div class="slider">
+      <img src="img/slider1.jpg" class="slide active">
+      <img src="img/slider2.jpg" class="slide">
+      <img src="img/slider3.jpg" class="slide">
+    </div>
+  </section>
+
+  <!-- MAIN  -->
+  <main class="container">
+    <section id="products" class="products" aria-live="polite"></section>
+
+    <aside id="cartPanel" class="cart-panel" hidden>
+      <h2>Carrito</h2>
+      <ul id="cartList"></ul>
+
+      <div class="cart-summary">
+        <p>Total: S/ <span id="cartTotal">0.00</span></p>
+        <button id="checkoutBtn">Pagar</button>
+        <button id="clearCartBtn">Vaciar</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Trabajo práctico de JavaScript — Interactividad, eventos y estructuras de datos.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
